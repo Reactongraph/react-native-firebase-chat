@@ -1,9 +1,10 @@
 # react-native-firebase-chat
-This is demo of realtime chat with firebase and react-native.
+This repository contains the source code for a simple chat application built with React Native (frontend) and Firebase (backend).
 
 ## Preview
 ![Login](https://user-images.githubusercontent.com/37612566/52701303-ed5b4d00-2f9f-11e9-9005-43ecac4916881.png)
 ![Chat](https://user-images.githubusercontent.com/37612566/52701303-ed5b4d00-2f9f-11e9-9005-43ecac4916881.png)
+![firebase-chat-database](https://user-images.githubusercontent.com/37612566/58699010-18847380-83ba-11e9-87dc-0c071761a8ec.png)
 
 
 ## Main technologies used
@@ -53,4 +54,16 @@ react-native run-android
 
 ### Start react native packager
 `yarn start`
+
+### Change firebase config
+Copy the config from your Firebase account and paste it to ./src/config/frirebaseSDK
+
+```firebase.initializeApp({
+    apiKey: “<API_KEY>“,
+    authDomain: “<PROJECT_ID>.firebaseapp.com”,
+    databaseURL: “https://<DATABASE_NAME>.firebaseio.com”,
+    projectId: “<PROJECT_ID>“,
+    storageBucket: “<BUCKET>.appspot.com”,
+    messagingSenderId: “<SENDER_ID>“,
+ });```
 
