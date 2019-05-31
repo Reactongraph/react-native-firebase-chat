@@ -2,9 +2,9 @@
 This repository contains the source code for a simple chat application built with React Native (frontend) and Firebase (backend).
 
 ## Preview
-![Login](https://user-images.githubusercontent.com/37612566/52701303-ed5b4d00-2f9f-11e9-9005-43ecac4916881.png)
-![Chat](https://user-images.githubusercontent.com/37612566/52701303-ed5b4d00-2f9f-11e9-9005-43ecac4916881.png)
-![firebase-chat-database](https://user-images.githubusercontent.com/37612566/58699010-18847380-83ba-11e9-87dc-0c071761a8ec.png)
+![chat](https://user-images.githubusercontent.com/37612566/58700313-4c14cd00-83bd-11e9-8908-9dceace8319a.png)
+![copy message](https://user-images.githubusercontent.com/37612566/58700310-4b7c3680-83bd-11e9-86ee-464044012e38.png)
+![join group](https://user-images.githubusercontent.com/37612566/58700312-4b7c3680-83bd-11e9-952d-e6b72351174e.png)![firebase-chat-database](https://user-images.githubusercontent.com/37612566/58699010-18847380-83ba-11e9-87dc-0c071761a8ec.png)
 
 
 ## Main technologies used
