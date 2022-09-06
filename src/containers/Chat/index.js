@@ -1,20 +1,19 @@
 // @flow
-import React from 'react';
-import { View } from 'react-native';
+import React, { useEffect, useState } from "react";
+import { View } from "react-native";
 
-import { GiftedChat } from 'react-native-gifted-chat';
+import { GiftedChat } from "react-native-gifted-chat";
 
-import FirebaseSDK from 'src/config/firebaseSDK';
-import Header from 'src/components/Header';
+import FirebaseSDK from "src/config/firebaseSDK";
+import Header from "src/components/Header";
 
-import styles from './styles'
+import styles from "./styles";
 
 type Props = {
   name?: string,
 };
 
 class Chat extends React.Component<Props> {
-
   state = {
     messages: [],
   };
@@ -30,7 +29,7 @@ class Chat extends React.Component<Props> {
     return (
       <View style={styles.container}>
         <View style={styles.headerView}>
-          <Header title="Group Chat"/>
+          <Header title="Group Chat" />
         </View>
         <View style={styles.bodyView}>
           <GiftedChat
@@ -44,8 +43,8 @@ class Chat extends React.Component<Props> {
   }
 
   componentDidMount() {
-    FirebaseSDK.shared.on(message =>
-      this.setState(previousState => ({
+    FirebaseSDK.shared.on((message) =>
+      this.setState((previousState) => ({
         messages: GiftedChat.append(previousState.messages, message),
       }))
     );
